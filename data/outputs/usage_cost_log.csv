@@ -1,0 +1,23 @@
+username,time,guid,document_type,client_name,file_name,file_size,video_duration,screenshot_processing,document_generation,prompt_tokens,completion_tokens,total_tokens,open_ai_cost,azure_whisper_cost,total_cost
+user,2025-11-11 10:27:46,aa976da9-4e19-4470-a272-695bb819a87a,,Internal,Meeting Documenter,35.9 MB,2.57,4.63,0.0,811,268,1079,2.0602,2.57,4.63
+user,2025-11-11 10:31:10,67223758-387d-4f0a-8e16-c5b55781cedc,,Internal,Meeting Documenter,35.9 MB,2.57,4.63,0.0,811,268,1079,2.0602,2.57,4.63
+user,2025-11-11 10:32:26,67223758-387d-4f0a-8e16-c5b55781cedc,kt_document,Internal,Meeting Documenter,35.9 MB,2.57,0.0,12.6,4988,1577,6565,12.5953,0.0,12.6
+user,2025-11-12 10:43:44,2e2acd1f-73de-4a06-9bbc-8e04ad83e3da,,Internal,Meeting Documenter,35.9 MB,2.57,4.64,0.0,811,273,1084,2.0655,2.57,4.64
+user,2025-11-12 10:45:17,2e2acd1f-73de-4a06-9bbc-8e04ad83e3da,general_documentation,Internal,Meeting Documenter,35.9 MB,2.57,0.0,16.85,6895,1653,8548,16.8522,0.0,16.85
+user,2025-11-12 12:31:46,6f57903a-07d2-4d17-8ac0-3128f4bc1cb1,,Internal,Meeting Documenter,35.9 MB,2.57,2.57,0.0,0,0,0,0.0,2.57,2.57
+user,2025-11-12 12:34:16,f1d3f630-5c61-48db-b79b-8579d79c76d8,,Internal,Meeting Documenter,35.9 MB,2.57,2.57,0.0,0,0,0,0.0,2.57,2.57
+user,2025-11-12 12:38:09,fc51da9f-255b-4ede-bc3b-0084101b3b5f,,Internal,Meeting Documenter,35.9 MB,2.57,2.57,0.0,0,0,0,0.0,2.57,2.57
+user,2025-11-12 12:42:37,04d9da10-92f1-4361-8ed2-f99819657560,,Internal,Meeting Documenter,35.9 MB,2.57,2.57,0.0,0,0,0,0.0,2.57,2.57
+user,2025-11-12 12:46:31,a5ad63a8-4242-41a5-935f-55362535a50b,,Internal,Meeting Documenter,35.9 MB,2.57,4.65,0.0,811,283,1094,2.0761,2.57,4.65
+user,2025-11-12 12:49:43,7d511990-40e3-4e1f-b24e-05b9e2650978,,Internal,Meeting Documenter,35.9 MB,2.57,4.65,0.0,811,288,1099,2.0814,2.57,4.65
+user,2025-11-12 12:52:45,b19870f2-fb4f-4526-821f-934da2b18e49,,Internal,Meeting Documenter,35.9 MB,2.57,4.63,0.0,811,270,1081,2.0623,2.57,4.63
+user,2025-11-12 12:53:26,b19870f2-fb4f-4526-821f-934da2b18e49,kt_document,Internal,Meeting Documenter,35.9 MB,2.57,0.0,10.92,4235,1554,5789,10.9219,0.0,10.92
+user,2025-11-12 13:00:12,a489922f-0a21-4fe3-9a23-a530f92cdd4d,,Internal,Meeting Documenter,35.9 MB,2.57,4.65,0.0,811,284,1095,2.0771,2.57,4.65
+user,2025-11-12 13:00:52,a489922f-0a21-4fe3-9a23-a530f92cdd4d,kt_document,Internal,Meeting Documenter,35.9 MB,2.57,0.0,10.76,4242,1386,5628,10.7591,0.0,10.76
+user,2025-11-17 23:02:05,80a05159-3661-4581-81e2-08660e054edd,,Test,meeting3,12.54 MB,3.15,5.57,0.0,923,376,1299,2.4199,3.15,5.57
+user,2025-11-17 23:10:01,c4ac3012-631e-48c2-a320-6bea538d2b2a,,Test,meeting3,12.54 MB,3.15,5.57,0.0,942,333,1275,2.416,3.15,5.57
+user,2025-11-17 23:11:44,c4ac3012-631e-48c2-a320-6bea538d2b2a,kt_document,Test,meeting3,12.54 MB,3.15,0.0,13.03,5155,1641,6796,13.0289,0.0,13.03
+user,2025-11-17 23:25:22,3b00d704-fb6c-473a-bddb-0833dd779f4b,,sample,meeting3,12.54 MB,3.15,5.55,0.0,937,332,1269,2.404,3.15,5.55
+user,2025-11-17 23:28:11,3b00d704-fb6c-473a-bddb-0833dd779f4b,kt_document,sample,meeting3,12.54 MB,3.15,0.0,13.28,5122,1945,7067,13.2789,0.0,13.28
+user,2025-11-18 09:38:56,f8396e31-e3a4-4761-94ef-22af9f6f470b,,Test,meeting3,12.54 MB,3.15,5.63,0.0,971,333,1304,2.4795,3.15,5.63
+user,2025-11-18 09:41:14,f8396e31-e3a4-4761-94ef-22af9f6f470b,kt_document,Test,meeting3,12.54 MB,3.15,0.0,11.8,4619,1587,6206,11.7978,0.0,11.8

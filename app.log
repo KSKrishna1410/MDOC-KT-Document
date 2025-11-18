@@ -1,0 +1,723 @@
+2025-11-18 09:31:18,131 - INFO - Initializing Azure OpenAI client with endpoint: https://ams-agent.openai.azure.com
+2025-11-18 09:31:18,702 - INFO - OpenAI configured: Azure OpenAI
+2025-11-18 09:31:18,702 - INFO - Using model/deployment: gpt-4o-mini
+2025-11-18 09:37:51,726 - INFO - Initializing Azure OpenAI client with endpoint: https://ams-agent.openai.azure.com
+2025-11-18 09:37:52,263 - INFO - OpenAI configured: Azure OpenAI
+2025-11-18 09:37:52,263 - INFO - Using model/deployment: gpt-4o-mini
+2025-11-18 09:38:08,752 - INFO - Whisper processor initialized for high-quality speech recognition
+2025-11-18 09:38:09,738 - INFO - Audio extracted successfully with FFmpeg - created 13 chunks
+2025-11-18 09:38:09,740 - INFO - ===== STARTING VIDEO PROCESSING =====
+2025-11-18 09:38:09,740 - INFO - Video stats: 4528 frames at 24.0 fps = 188.86 seconds
+2025-11-18 09:38:09,741 - INFO - Using TRUE PARALLEL processing for video chunks
+2025-11-18 09:38:09,741 - INFO - ===== PHASE 1: SPEECH & SCENE DETECTION =====
+2025-11-18 09:38:09,741 - INFO - Starting speech processing...
+2025-11-18 09:38:09,741 - INFO - Pre-processing 13 audio chunks for speech...
+2025-11-18 09:38:09,741 - INFO - Using PARALLEL processing for 13 speech chunks
+2025-11-18 09:38:09,746 - INFO - Using optimized parallel speech recognition for 13 chunks
+2025-11-18 09:38:09,746 - INFO - Processing 13 speech chunks in parallel
+2025-11-18 09:38:10,611 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,617 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,617 - ERROR - Azure AI Speech failed for chunk 1: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:10,633 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,633 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,618 - ERROR - Azure AI Speech failed for chunk 2: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+2025-11-18 09:38:10,638 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,639 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,618 - ERROR - Azure AI Speech failed for chunk 3: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+2025-11-18 09:38:10,644 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,644 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,618 - ERROR - Azure AI Speech failed for chunk 4: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+2025-11-18 09:38:10,648 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,648 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,618 - ERROR - Azure AI Speech failed for chunk 5: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+2025-11-18 09:38:10,652 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,652 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,618 - ERROR - Azure AI Speech failed for chunk 6: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+2025-11-18 09:38:10,657 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,658 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,618 - ERROR - Azure AI Speech failed for chunk 7: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+2025-11-18 09:38:10,662 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,662 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,619 - ERROR - Azure AI Speech failed for chunk 8: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+2025-11-18 09:38:10,636 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,663 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,664 - ERROR - Azure OpenAI Whisper failed for chunk 1: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py", line 36, in <module>
+    client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:10,679 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,679 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,683 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,683 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,664 - ERROR - Azure OpenAI Whisper failed for chunk 2: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+ImportError: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+2025-11-18 09:38:10,696 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,696 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,700 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,700 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,664 - ERROR - Azure OpenAI Whisper failed for chunk 3: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+ImportError: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+2025-11-18 09:38:10,713 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,713 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,717 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,718 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,664 - ERROR - Azure OpenAI Whisper failed for chunk 4: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+ImportError: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+2025-11-18 09:38:10,735 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,735 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,741 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,742 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,664 - ERROR - Azure OpenAI Whisper failed for chunk 5: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+ImportError: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+2025-11-18 09:38:10,758 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,759 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,828 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,828 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,664 - ERROR - Azure OpenAI Whisper failed for chunk 6: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+ImportError: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+2025-11-18 09:38:10,840 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,841 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,847 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,847 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,665 - ERROR - Azure OpenAI Whisper failed for chunk 7: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+ImportError: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+2025-11-18 09:38:10,855 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,855 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,861 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:10,862 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:10,665 - ERROR - Azure OpenAI Whisper failed for chunk 8: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+ImportError: cannot import name 'get_azure_whisper_client' from 'src.processors.audio.azure_whisper_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py)
+2025-11-18 09:38:12,739 - INFO - Chunk 6/13: Recognized speech with Google (fallback)
+2025-11-18 09:38:12,746 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:12,746 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:12,747 - ERROR - Azure AI Speech failed for chunk 9: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:12,753 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:12,754 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:12,754 - ERROR - Azure OpenAI Whisper failed for chunk 9: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py", line 36, in <module>
+    client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:12,812 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:12,812 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:12,802 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:13,207 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:13,247 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:13,248 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:13,244 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:13,563 - INFO - Chunk 8/13: Recognized speech with Google (fallback)
+2025-11-18 09:38:13,570 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:13,570 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:13,571 - ERROR - Azure AI Speech failed for chunk 10: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:13,583 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:13,583 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:13,584 - ERROR - Azure OpenAI Whisper failed for chunk 10: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py", line 36, in <module>
+    client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:13,602 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:13,602 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:13,596 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:17,861 - INFO - Chunk 5/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:17,867 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:17,867 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:17,867 - ERROR - Azure AI Speech failed for chunk 11: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:17,877 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:17,878 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:17,878 - ERROR - Azure OpenAI Whisper failed for chunk 11: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py", line 36, in <module>
+    client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:18,139 - INFO - Chunk 2/13: Recognized speech with Google (fallback)
+2025-11-18 09:38:18,146 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:18,146 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:18,147 - ERROR - Azure AI Speech failed for chunk 12: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:18,157 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:18,158 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:18,158 - ERROR - Azure OpenAI Whisper failed for chunk 12: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py", line 36, in <module>
+    client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:19,802 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:20,012 - INFO - Chunk 1/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:20,018 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:20,018 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:20,018 - ERROR - Azure AI Speech failed for chunk 13: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:20,030 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:20,031 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:20,031 - ERROR - Azure OpenAI Whisper failed for chunk 13: vault_url must be the URL of an Azure Key Vault
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 81, in process_speech_chunk
+    from ..audio.azure_whisper_client import get_azure_whisper_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_whisper_client.py", line 36, in <module>
+    client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+2025-11-18 09:38:21,024 - INFO - Chunk 11/13: Recognized speech with Google (fallback)
+2025-11-18 09:38:21,204 - INFO - Environment is configured for ClientSecretCredential
+2025-11-18 09:38:21,205 - INFO - ManagedIdentityCredential will use IMDS with client_id: da5ff49d-6ece-4311-b277-4563fc35fd36
+2025-11-18 09:38:21,198 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+ImportError: cannot import name 'get_azure_speech_client' from 'src.processors.audio.azure_speech_client' (C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:22,198 - INFO - Chunk 4/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:22,199 - INFO - Keyword found at 45.00s: He doesn't store any user info himself. He has to ...
+2025-11-18 09:38:24,243 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:24,481 - INFO - Chunk 3/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:24,483 - INFO - Keyword found at 30.00s: We have that we can finally pull the users info do...
+2025-11-18 09:38:28,376 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:40,073 - INFO - Chunk 12/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:42,181 - INFO - Chunk 7/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:42,183 - INFO - Keyword found at 90.00s: We can't get time for our use case. We can't use E...
+2025-11-18 09:38:43,908 - INFO - Chunk 10/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:44,575 - ERROR - Google Speech Recognition failed: 
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 55, in process_speech_chunk
+    from ..audio.azure_speech_client import get_azure_speech_client
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\audio\azure_speech_client.py", line 35, in <module>
+    vault_client = SecretClient(vault_url=key_vault_url, credential=credential)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\azure\keyvault\secrets\_shared\client_base.py", line 80, in __init__
+    raise ValueError("vault_url must be the URL of an Azure Key Vault")
+ValueError: vault_url must be the URL of an Azure Key Vault
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\saikrishna.kompelly\Downloads\meeting-document-generator - Copy (3)\meeting-document-generator\src\processors\parallel\direct_parallel.py", line 107, in process_speech_chunk
+    text = recognizer.recognize_google(audio_data)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\saikrishna.kompelly\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+2025-11-18 09:38:46,399 - INFO - Chunk 9/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:47,275 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 401 Unauthorized"
+2025-11-18 09:38:47,279 - INFO - Chunk 13/13: Recognized speech with Whisper API (final fallback)
+2025-11-18 09:38:47,300 - INFO - Parallel speech processing completed in 37.55s
+2025-11-18 09:38:47,300 - INFO - Found 12 speech segments and 3 keyword matches
+2025-11-18 09:38:47,300 - INFO - Parallel speech processing complete with 12 segments and 3 keywords
+2025-11-18 09:38:47,301 - INFO - Speech processing completed in 37.56s
+2025-11-18 09:38:47,301 - INFO - Using OpenAI to analyze 12 speech segments...
+2025-11-18 09:38:47,301 - INFO - 
+Sending transcript to OpenAI for analysis: 2127 characters
+2025-11-18 09:38:47,301 - INFO - First 200 chars: [0.00s] Just one piece of licensing creators. But it's not that simple, all right? I already have 18.10.1 in over a little bit. I'm still not understanding this. Why is it so hard to display the birth...
+2025-11-18 09:38:47,301 - INFO - Initializing Azure OpenAI client with endpoint: https://ams-agent.openai.azure.com
+2025-11-18 09:38:54,245 - INFO - HTTP Request: POST https://ams-agent.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-11-18 09:38:54,280 - INFO - AI identified 6 potential screenshot moments
+2025-11-18 09:38:54,281 - INFO - AI analysis completed in 6.98s
+2025-11-18 09:38:54,281 - INFO - Found 3 keyword-triggered timestamps
+2025-11-18 09:38:54,281 - INFO - Found 6 AI-triggered timestamps
+2025-11-18 09:38:54,281 - INFO - Total speech analysis completed in 44.54s
+2025-11-18 09:38:54,281 - INFO - Speech processing complete
+2025-11-18 09:38:54,281 - INFO - Scene detection skipped (disabled in settings)
+2025-11-18 09:38:54,281 - INFO - Phase 1 complete - all detection methods finished
+2025-11-18 09:38:54,283 - INFO - 
+===== PHASE 2: SCREENSHOT GENERATION =====
+2025-11-18 09:38:54,283 - INFO - Phase 2 starting - preparing to generate screenshots
+2025-11-18 09:38:54,283 - INFO - 
+DEBUG INFO for Phase 1 results:
+2025-11-18 09:38:54,283 - INFO - - Keyword timestamps: 3
+2025-11-18 09:38:54,283 - INFO - - AI timestamps: 6
+2025-11-18 09:38:54,283 - INFO - - Scene changes: 0
+2025-11-18 09:38:54,283 - INFO - 
+WARNING: No key timestamps found for Phase 2
+2025-11-18 09:38:54,283 - INFO - Creating combined timestamps from Phase 1 results
+2025-11-18 09:38:54,283 - INFO - Adding 3 keyword timestamps
+2025-11-18 09:38:54,283 - INFO - Adding 6 AI timestamps
+2025-11-18 09:38:54,283 - INFO - Sorting 9 timestamps
+2025-11-18 09:38:54,284 - INFO - After filtering: 7 timestamps remaining
+2025-11-18 09:38:54,284 - INFO - 
+--------------------------------
+2025-11-18 09:38:54,284 - INFO - STARTING PHASE 2: Sequential Video Processing
+2025-11-18 09:38:54,284 - INFO - --------------------------------
+2025-11-18 09:38:54,284 - INFO - Starting Phase 2: Processing 7 key timestamps
+2025-11-18 09:38:54,320 - INFO - Processing timestamp 1/7: 0.00s - AI detected: AI fallback: Speech at timestamp (Just one piece of licensing creators. But it's not...)
+2025-11-18 09:38:56,180 - INFO - Added screenshot at 0.00s - AI detected: AI fallback: Speech at timestamp (Just one piece of licensing creators. But it's not...)
+2025-11-18 09:38:56,180 - INFO - Processing timestamp 2/7: 28.00s - Keyword trigger: \bgo to\b
+2025-11-18 09:38:56,276 - INFO - Added screenshot at 28.00s - Keyword trigger: \bgo to\b
+2025-11-18 09:38:56,276 - INFO - Processing timestamp 3/7: 43.00s - Keyword trigger: \bgo to\b
+2025-11-18 09:38:56,356 - INFO - Added screenshot at 43.00s - Keyword trigger: \bgo to\b
+2025-11-18 09:38:56,357 - INFO - Processing timestamp 4/7: 60.00s - AI detected: AI fallback: Speech at timestamp (and the battery battery. The Mold Galactus has a n...)
+2025-11-18 09:38:56,507 - INFO - Added screenshot at 60.00s - AI detected: AI fallback: Speech at timestamp (and the battery battery. The Mold Galactus has a n...)
+2025-11-18 09:38:56,507 - INFO - Processing timestamp 5/7: 88.00s - Keyword trigger: \bfind\b
+2025-11-18 09:38:56,618 - INFO - Added screenshot at 88.00s - Keyword trigger: \bfind\b
+2025-11-18 09:38:56,618 - INFO - Processing timestamp 6/7: 120.00s - AI detected: AI fallback: Speech at timestamp (manager. You think you know what our users want? Y...)
+2025-11-18 09:38:56,725 - INFO - Added screenshot at 120.00s - AI detected: AI fallback: Speech at timestamp (manager. You think you know what our users want? Y...)
+2025-11-18 09:38:56,725 - INFO - Processing timestamp 7/7: 150.00s - AI detected: AI fallback: Speech at timestamp (alright so close)
+2025-11-18 09:38:56,841 - INFO - Added screenshot at 150.00s - AI detected: AI fallback: Speech at timestamp (alright so close)
+2025-11-18 09:38:56,841 - INFO - Phase 2 completed: Generated 7 screenshots
+2025-11-18 09:38:56,842 - INFO - Total screenshots generated: 7
+2025-11-18 09:38:56,842 - INFO - Parallel video processing complete: 7 screenshots in 47.10s
+2025-11-18 09:38:56,847 - INFO -  Loaded 12 speech segments
+2025-11-18 09:38:57,030 - INFO - Initializing Azure OpenAI client with endpoint: https://ams-agent.openai.azure.com
+2025-11-18 09:38:59,522 - INFO - HTTP Request: POST https://ams-agent.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-11-18 09:38:59,524 - INFO - Extracted 7 attendees from meeting: ['Speaker 1', 'Speaker 2', 'Barbie Duffy', 'Ringo 2', 'BLS', 'Galactus', 'Super III']
+2025-11-18 09:38:59,525 - INFO - Initializing Azure OpenAI client with endpoint: https://ams-agent.openai.azure.com
+2025-11-18 09:39:05,359 - INFO - HTTP Request: POST https://ams-agent.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-11-18 09:39:05,360 - INFO - Extracted 6 highlights from meeting
+2025-11-18 09:40:26,763 - INFO - Initializing Azure OpenAI client with endpoint: https://ams-agent.openai.azure.com
+2025-11-18 09:40:27,397 - INFO - DEBUG: Starting document generation with 7 screenshots
+2025-11-18 09:40:27,397 - INFO - DEBUG: Generating narrative documentation with 7 screenshots
+2025-11-18 09:40:27,398 - INFO - Error getting AI enhanced reason: No module named 'openai_config'
+2025-11-18 09:40:27,399 - INFO - Error getting AI enhanced reason: No module named 'openai_config'
+2025-11-18 09:40:27,400 - INFO - Error getting AI enhanced reason: No module named 'openai_config'
+2025-11-18 09:40:27,401 - INFO - Using Azure OpenAI with deployment: gpt-4o-mini
+2025-11-18 09:40:49,231 - INFO - HTTP Request: POST https://ams-agent.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-11-18 09:40:49,266 - INFO - API call successful for narrative document generation
+2025-11-18 09:40:49,267 - INFO - DEBUG: Document structure received from AI
+2025-11-18 09:40:49,267 - INFO - DEBUG: Document title: Knowledge Transfer Document: User Info Management Process
+2025-11-18 09:40:49,267 - INFO - DEBUG: Document has 4 sections
+2025-11-18 09:40:49,267 - INFO - DEBUG: Section 1 has timestamps: True, count: 2
+2025-11-18 09:40:49,267 - INFO - DEBUG: Section 2 has timestamps: True, count: 1
+2025-11-18 09:40:49,268 - INFO - DEBUG: Section 3 has timestamps: True, count: 1
+2025-11-18 09:40:49,268 - INFO - DEBUG: Section 4 has timestamps: True, count: 1
+2025-11-18 09:40:49,268 - INFO - DEBUG: Have 7 total screenshots available
+2025-11-18 09:40:49,268 - INFO - DEBUG: Matched AI timestamp 0.0s to available 0.0s
+2025-11-18 09:40:49,268 - INFO - DEBUG: Matched AI timestamp 28.0s to available 28.0s
+2025-11-18 09:40:49,269 - INFO - DEBUG: Matched AI timestamp 30.0s to available 28.0s
+2025-11-18 09:40:49,269 - INFO - DEBUG: Matched AI timestamp 43.0s to available 43.0s
+2025-11-18 09:40:49,269 - INFO - DEBUG: Matched AI timestamp 60.0s to available 60.0s
+2025-11-18 09:40:49,269 - INFO - DEBUG: Matched AI timestamp 88.0s to available 88.0s
+2025-11-18 09:40:49,269 - INFO - DEBUG: Matched AI timestamp 120.0s to available 120.0s
+2025-11-18 09:40:49,270 - INFO - DEBUG: AI made 7 total assignments for 7 screenshots
+2025-11-18 09:40:49,270 - INFO - DEBUG: Removed 0 invalid timestamps
+2025-11-18 09:40:49,270 - INFO - DEBUG: Final valid assignments: 7
+2025-11-18 09:40:49,270 - INFO - DEBUG: Allowing multiple placements for better context
+2025-11-18 09:40:49,270 - INFO - DEBUG: Generating missing questions section
+2025-11-18 09:40:55,778 - INFO - HTTP Request: POST https://ams-agent.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-11-18 09:40:55,796 - INFO - DEBUG: Generating process map section
+2025-11-18 09:41:08,650 - INFO - HTTP Request: POST https://ams-agent.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-11-18 09:41:08,670 - INFO - DEBUG: Extracted mermaid code: flowchart TD
+    A[Start: Pull user info from Raccoon] --> B{Does Raccoon have user info?}
+    B -- ...
+2025-11-18 09:41:08,670 - INFO - Initializing Azure OpenAI client with endpoint: https://ams-agent.openai.azure.com
+2025-11-18 09:41:09,490 - INFO - DEBUG: Creating mermaid diagram with enhanced fallbacks
+2025-11-18 09:41:09,490 - INFO - DEBUG: Trying rendering method 1/5: Mermaid.ink API
+2025-11-18 09:41:09,490 - INFO - DEBUG: Mermaid.ink API - Attempting with current code...
+2025-11-18 09:41:09,490 - INFO - DEBUG: Mermaid.ink attempt 1 - Calling API: https://mermaid.ink/img/Zmxvd2NoYXJ0IFRECiAgICBBW1N0YXJ0OiBQdWxsIHVzZXIgaW5mbyBmcm9tIFJhY2Nvb25dIC0t...
+2025-11-18 09:41:11,338 - INFO - DEBUG: mermaid.ink API response status: 200
+2025-11-18 09:41:11,480 - INFO - DEBUG: Successfully created diagram image: (595, 1566)
+2025-11-18 09:41:11,501 - INFO - DEBUG: Successfully created mermaid diagram image
+2025-11-18 09:41:11,504 - INFO - DEBUG: Proceeding with 7 valid screenshots
+2025-11-18 09:41:11,508 - INFO - DEBUG: Total screenshots to process: 7
+2025-11-18 09:41:11,508 - INFO - DEBUG: Screenshot 0 at 0.0s is valid: format=None, size=(1280, 720)
+2025-11-18 09:41:11,508 - INFO - DEBUG: Screenshot 1 at 28.0s is valid: format=None, size=(1280, 720)
+2025-11-18 09:41:11,508 - INFO - DEBUG: Screenshot 2 at 43.0s is valid: format=None, size=(1280, 720)
+2025-11-18 09:41:11,509 - INFO - DEBUG: Screenshot 3 at 60.0s is valid: format=None, size=(1280, 720)
+2025-11-18 09:41:11,509 - INFO - DEBUG: Screenshot 4 at 88.0s is valid: format=None, size=(1280, 720)
+2025-11-18 09:41:11,509 - INFO - DEBUG: Screenshot 5 at 120.0s is valid: format=None, size=(1280, 720)
+2025-11-18 09:41:11,509 - INFO - DEBUG: Screenshot 6 at 150.0s is valid: format=None, size=(1280, 720)
+2025-11-18 09:41:11,509 - INFO - DEBUG: Valid screenshots in map: 7
+2025-11-18 09:41:11,510 - INFO - DEBUG: Looking for screenshot near 0.0s
+2025-11-18 09:41:11,510 - INFO - DEBUG: Found exact match at 0.0s
+2025-11-18 09:41:11,565 - INFO - DEBUG: Looking for screenshot near 28.0s
+2025-11-18 09:41:11,565 - INFO - DEBUG: Found exact match at 28.0s
+2025-11-18 09:41:11,626 - INFO - DEBUG: Looking for screenshot near 28.0s
+2025-11-18 09:41:11,626 - INFO - DEBUG: No suitable screenshot found near 28.0s
+2025-11-18 09:41:11,626 - INFO - DEBUG: Looking for screenshot near 43.0s
+2025-11-18 09:41:11,626 - INFO - DEBUG: Found exact match at 43.0s
+2025-11-18 09:41:11,721 - INFO - DEBUG: Looking for screenshot near 60.0s
+2025-11-18 09:41:11,721 - INFO - DEBUG: Found exact match at 60.0s
+2025-11-18 09:41:11,803 - INFO - DEBUG: Looking for screenshot near 88.0s
+2025-11-18 09:41:11,804 - INFO - DEBUG: Found exact match at 88.0s
+2025-11-18 09:41:11,879 - INFO - DEBUG: Looking for screenshot near 120.0s
+2025-11-18 09:41:11,879 - INFO - DEBUG: Found exact match at 120.0s
+2025-11-18 09:41:11,967 - INFO - Original: (595, 1566), Aspect Ratio: 0.38, DPI: 150
+2025-11-18 09:41:11,967 - INFO - Calculated: (1.90in, 5.00in)

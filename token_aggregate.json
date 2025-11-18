@@ -1,0 +1,29 @@
+{
+  "openai": {
+    "total": 63738,
+    "by_module": {
+      "my_utils": 6515,
+      "document_generator": 12950,
+      "src.utils.my_utils": 3274,
+      "src.document.document_generator": 34757,
+      "src.utils.media_utils": 6242
+    },
+    "by_function": {
+      "my_utils.analyze_speech_transcript": 6515,
+      "document_generator._get_ai_enhanced_reason": 3435,
+      "document_generator._convert_mermaid_to_dot": 6392,
+      "document_generator._generate_missing_questions": 1488,
+      "document_generator._generate_process_map": 1635,
+      "src.utils.my_utils.analyze_speech_transcript": 3274,
+      "src.document.document_generator._convert_mermaid_to_dot": 22749,
+      "src.document.document_generator._generate_missing_questions": 5587,
+      "src.document.document_generator._generate_process_map": 6421,
+      "src.utils.media_utils.analyze_speech_transcript": 6242
+    }
+  },
+  "whisper": {
+    "total": 0,
+    "by_module": {},
+    "by_function": {}
+  }
+}
